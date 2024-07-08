@@ -12,6 +12,7 @@ import UnoCSS from "unocss/vite"
 export default ({ mode }: ConfigEnv): UserConfigExport => {
   const viteEnv = loadEnv(mode, process.cwd()) as ImportMetaEnv
   const { VITE_PUBLIC_PATH } = viteEnv
+  console.log(__dirname, "=======")
   return {
     /** 打包时根据实际情况修改 base */
     base: VITE_PUBLIC_PATH,

@@ -42,6 +42,7 @@ const theOnlyOneChild = computed(() => {
 
 /** 解析路径 */
 const resolvePath = (routePath: string) => {
+  console.log(routePath, "base", props.basePath, "=================")
   switch (true) {
     case isExternal(routePath):
       return routePath
